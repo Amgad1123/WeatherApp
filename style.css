@@ -55,7 +55,6 @@ i {
 #locationName {
     font-size: 16px;
     display: none;
-    margin-left: 120px;
     margin-top: 20px;
 }
 
@@ -68,15 +67,6 @@ i {
 .humidity {
     margin-top: 30px;
 }
-/*img {
-    left: 0;
-    top: 0;
-    position: fixed;
-    display: none;
-    height: 100%;
-    width: 100%;
-    margin: 40px;
-}*/
 
 #icon {
     display: none;
@@ -87,10 +77,8 @@ i {
 .weatherInfo {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-}
-
-.weatherDescription {
 }
 
 .tempInfo {
@@ -146,7 +134,7 @@ i {
     opacity: 20;
     border-radius: 8px;
     height: 130px;
-    width: 600px;
+    
 }
 
 .sub {
@@ -156,4 +144,10 @@ i {
     padding: 5px;
     border-radius: 8px;
     justify-content: center;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.sub:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.9);
 }
