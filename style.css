@@ -1,0 +1,159 @@
+:root {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw; 
+    background-color: #8FDDDF;
+    /*background-image: url(images/cold.jpg);
+    background-repeat: repeat no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;*/
+    font-family: 'Courier New', Courier, monospace;
+}
+body  {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+.toggle {
+    padding: 16px;
+    background-color: rgb(72,72,72);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    right:20vh
+}
+
+#location {
+    width: 300px;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: rgb(72,72,72);
+    font-size: 16px;
+    margin-top: 40px;
+    color: white;
+}
+
+.search {
+    position: absolute;
+    top: 65px;
+    left: 58vw;
+    border: none;
+    color: white;
+    background-color: rgb(72,72,72);
+}
+
+i {
+    border: none;
+    font-size: 20px;
+}
+
+#locationName {
+    font-size: 16px;
+    display: none;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.subDiv {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 0px;
+}
+.humidity {
+    margin-top: 30px;
+}
+/*img {
+    left: 0;
+    top: 0;
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    margin: 40px;
+}*/
+
+#icon {
+    display: none;
+    margin-top: 30px;
+    height: 100px;
+    width: 150px;
+}
+.weatherInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.weatherDescription {
+}
+
+.tempInfo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.temp {
+    font-size: 30px;
+    margin-bottom: 0;
+
+}
+
+.icon-text-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.text-stack1, .text-stack2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-stack1 {
+    padding-bottom: 22px;
+}
+
+.humwrap {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 30px;
+    margin-top: 10px;
+    display: none;
+}
+
+#drop {
+    padding-top: 25px;
+    padding-right: 5px;
+}
+
+#wind {
+    padding-right: 5px;
+}
+
+.week {
+    margin-top: 60px;
+    display: flex;
+    max-width: 500px;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 20;
+    border-radius: 8px;
+    height: 130px;
+    width: 600px;
+}
+
+.sub {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    padding: 5px;
+    border-radius: 8px;
+    justify-content: center;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <form>
+        <input type="text" id ="location" placeholder="Enter location">
+        <button type="submit" class="search"><i class ="fa fa-search"></i></button>
+    </form>
+    <img src="./images/weather.png" alt="picture of different weather icons" class="weatherPNG">
+    <div class="weatherInfo">
+        <i class="fa-solid fa-location-dot" id="locationName"></i>
+        <div class = "tempInfo">
+            <img src="" alt="image of current weather conditions" id="icon">
+            <div class="subDiv">
+                <h1 class="temp"><span class="degree"></span></h1>
+                <h3 class="weatherDescription"></h3>
+            </div>
+        </div>
+
+        <div class = "humwrap">
+            <div class="icon-text-wrapper">
+                <i class="fa-solid fa-droplet" id="drop"></i>
+                <div class="text-stack1">
+                    <span class ="humidity">Humidity</span>
+                    <span class="number">123</span>
+                </div>
+            </div>
+            <div class="icon-text-wrapper">
+                <i class="fa-solid fa-wind" id = "wind"></i>
+            <div class="text-stack2">
+                <span class ="windSpeed">   Wind speed</span>
+                <span class="number">123</span>
+            </div>
+            </div>
+        </div>
+        <div class = "week">
+            <div class="sub">
+                <h3 class="day0Date"></h3>
+                <img src="" alt="next days date image" class = "day0Image" width="50" height="50px">
+                <h3 class="day0Temp"></h3>
+            </div>
+            <div class="sub">
+
+            </div>
+            <div class="sub">
+
+            </div>
+            <div class="sub">
+
+            </div>
+            <div class="sub">
+
+            </div>
+        </div>
+    </div>
+    <button class ="toggle">C</button>
+
+    <script src="./script.js">
+    </script>
+</body>
+</html>
