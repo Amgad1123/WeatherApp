@@ -29,6 +29,12 @@ try {
     numeral.textContent = `${Math.round(tempF)}°F`;
     weatherDescripition.textContent = `${currentDescription}`;
 
+    //windspeed and humidity 
+    const humidity = document.querySelector(".humidityNum");
+    humidity.textContent =`${weatherInfo.currentConditions.humidity}%`
+    const windspeed = document.querySelector(".windSpeedNum");
+    windspeed.textContent = `${weatherInfo.currentConditions.windspeed}m/s`
+
     //add display for the next 5 days forecast
     for(let i =2; i<=6; i++) {
         const sub = document.createElement("div");
@@ -36,6 +42,7 @@ try {
         const title = document.createElement("h3");
         title.classList.add("date");
         const dateTemp = document.createElement("h3");
+        dateTemp.classList.add("weekTemp");
         const dateImage = document.createElement("img");
 
         //formatted weather
@@ -48,20 +55,9 @@ try {
         dateImage.setAttribute("style","width: 30px; heigth: 30px;");
         dateTemp.textContent = `${Math.round(weatherInfo.days[i].temp)}`;
         sub.append(title,dateImage,dateTemp);
-        //sub.setAttribute("style", "display: flex; flex-direction: column; margin: 8px; padding: 5px; border-radius: 8px; justify-content: center;");
         week.appendChild(sub)
 
     }
-    /*const day0Date = document.querySelector(".day0Date");
-    const day0Image = document.querySelector(".day0Image");
-    const day0Temp = document.querySelector(".day0Temp")
-    const dateUpdate = new Date(weatherInfo.days[1].datetime);
-    const options = {month: 'short', day: '2-digit'};
-    const formattedDate = dateUpdate.toLocaleDateString('en-Us', options);
-    day0Date.textContent = `${formattedDate}`
-
-    day0Image.src = `icons/${weatherInfo.days[1].icon}.png`
-    day0Temp.textContent = `${weatherInfo.days[1].temp}`;*/
 
 }
 catch (err) {
@@ -94,7 +90,6 @@ button.addEventListener("click", (event)=> {
 
 toggle.addEventListener("click", ()=> {
     if (count%2 === 0) {
-        //weather.textContent = `The weather is currently ${tempF} degrees Fahrenheit`;
         toggle.textContent = 'C'
         numeral.textContent = `${Math.round(tempF*(9/5)+32)}°F`
         tempF = Math.round(tempF*(9/5)+32);
