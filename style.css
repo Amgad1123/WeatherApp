@@ -32,11 +32,14 @@ body  {
     margin-top: 40px;
     color: white;
 }
+.search-container {
+    position: relative;
+}
 
 .search {
     position: absolute;
-    top: 65px;
-    left: 57vw;
+    top: 57px;
+    left: 18vw;
     border: none;
     color: white;
     background-color: rgb(72,72,72);
