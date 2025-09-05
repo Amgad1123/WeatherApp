@@ -24,23 +24,26 @@ body  {
 }
 
 #location {
-    width: 300px;
+    width: 250px;
     padding: 16px;
-    border-radius: 16px;
+    border-radius: 8px;
     background-color: rgb(72,72,72);
     font-size: 16px;
     margin-top: 40px;
     color: white;
-}
-.search-container {
-    position: relative;
+    border: none;
 }
 
+.searchContainer {
+    display: inline-block;
+}
 .search {
-    position: absolute;
-    top: 57px;
-    left: 18vw;
+    margin-left: -31px;
+    padding-bottom: 4px;
+    border-radius: 8px;
+    height: 50px;
     border: none;
+    border-right: 1px solid black;
     color: white;
     background-color: rgb(72,72,72);
 }
